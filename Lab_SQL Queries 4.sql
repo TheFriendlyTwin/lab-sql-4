@@ -33,7 +33,7 @@ select * from sakila.film
 where title like '%DATE%' and title not like '%CANDIDATE%';
 
 select * from sakila.film
-where title regexp ' DATE ';
+where title regexp '\\bDATE\\b';
 
 -- 7. Get 10 films with the longest title.
 select title, length(title) from sakila.film
